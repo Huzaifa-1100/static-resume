@@ -243,19 +243,52 @@ body {
   padding: 40px;
 }
 
-@media (max-width: 1000px){
-    .container{
-        margin: 10px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .interset ul{
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Styling for all buttons with padding, white background, dark text, rounded corners, and hover effects */
+button {
+  padding: 10px;
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  margin-bottom: 20px;
 }
 
-@media (max-width: 600px){
-    .about .box {
-        flex-direction: column;
-    }
+/* Change button background color on hover and add a slight scale effect */
+button:hover {
+  background: red;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Specific styles for the 'Toggle Skills' button */
+#toggleSkills {
+  background: #810000;
+  color: #ffffff; /* White text for visibility */
+}
+
+/* Darker gradient background for the toggle button on hover */
+#toggleSkills:hover {
+  background: red;
+}
+
+/* Responsive classes */
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .interset ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
 }
